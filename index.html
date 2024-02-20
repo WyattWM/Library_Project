@@ -3,48 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Library Project</title>
   </head>
   <body>
-    <main
-      style="
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-      "
-    >
-      <div>
-        <h1>Library Project</h1>
-        <div id="library">
-          <!-- Add table here -->
-          <table id="table" style="min-width: 680px; margin: 2rem">
-            <thead>
-              <tr>
-                <th>Title</th>
-                <th>Author</th>
-                <th>Read</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Name of the Wind</td>
-                <td>Patrick Rothfuss</td>
-                <td>
-                  <input
-                    type="checkbox"
-                    name="read"
-                    id="readLibraryCheckbox"
-                    checked
-                    disabled
-                  />
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+    <main>
+      <h1>Library Project</h1>
+      <div id="library">
+        <!-- Add table here -->
+        <table id="table">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Read</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <label for="title"></label>
+                <input type="text" />
+              </td>
+              <td>
+                <label for="title"></label>
+                <input type="text" />
+              </td>
+              <td>
+                <label for="checkbox"></label>
+                <input type="text" />
+              </td>
+            </tr>
+            <tr>
+              <td>Name of the Wind</td>
+              <td>Patrick Rothfuss</td>
+              <td>
+                <input
+                  type="checkbox"
+                  name="read"
+                  id="readLibraryCheckbox"
+                  checked disabled
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </main>
-
     <script src="app.js"></script>
   </body>
 </html>
