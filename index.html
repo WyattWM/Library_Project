@@ -3,15 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <title>Library Project</title>
   </head>
   <body>
-    <main>
-      <h1>Library Project</h1>
-      <div id="library">
+    <main
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      "
+    >
+      <div>
+        <h1>Library Project</h1>
+        <!-- Form to add a new book -->
+        <form id="addBookForm">
+          <div id="library">
+            <!-- Label and input box for the book title -->
+            <label for="bookTitle">Book Title:</label>
+            <input type="text" id="bookTitle" name="bookTitle" required>
+
+            <!-- Label and input box for the author -->
+            <label for="authorName">Author:</label>
+            <input type="text" id="authorName" name="authorName" required>
+
+            <!-- Label and checkbox for the read property -->
+            <label for="readCheckbox">Read:</label>
+            <input type="checkbox" id="readCheckbox" name="read">
+
+            <!-- Submit button to add a new book -->
+            <button type="submit">Add Book</button>
+          </div>
+        </form>
+
         <!-- Add table here -->
-        <table id="table">
+        <table id="table" style="min-width: 680px; margin: 2rem">
           <thead>
             <tr>
               <th>Title</th>
@@ -20,43 +46,12 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>
-                <label for="title"></label>
-                <input type="text" />
-              </td>
-              <td>
-                <label for="title"></label>
-                <input type="text" />
-              </td>
-              <td>
-                <label for="checkbox"></label>
-                <input type="text" />
-              </td>
-            </tr>
-            <tr>
-              <td>Name of the Wind</td>
-              <td>Patrick Rothfuss</td>
-              <td>
-                <input
-                  type="checkbox"
-                  name="read"
-                  id="readLibraryCheckbox"
-                  checked
-                  disabled
-                />
-              </td>
-            </tr>
+            <!-- Table rows will be added here -->
           </tbody>
         </table>
       </div>
     </main>
 
-    <i class="fa-solid fa-book-open fa-bounce"></i>
-    <script
-      src="https://kit.fontawesome.com/d41d66f02a.js"
-      crossorigin="anonymous"
-    ></script>
     <script src="app.js"></script>
   </body>
 </html>
